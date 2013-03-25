@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 from django.views.generic import TemplateView
 
-from views import GraphView
+from graph.views import GraphView
 
 
 urlpatterns = patterns('graph.views',
