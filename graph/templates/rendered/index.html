@@ -1,0 +1,41 @@
+{% extends "base.html
+<!DOCTYPE html>
+{% load url from future %}
+<html>
+    <head>
+        {%  block head_title %}Graph{% endblock %}
+    </head>
+    <body>
+    {% block content %}
+        <h2>Graph Library</h2>
+        <li><a href="{% url 'graph' '01-create_graph' %}">01 - Create Graph</a></li>
+        <li><a href="{% url 'graph' '02-custom_node_appearance' %}">02 - Custom Node Appearance</a></li>
+        <li><a href="{% url 'graph' '03-custom_link_appearance' %}">03 - Custom Link Appearance</a></li>
+        <li><a href="{% url 'graph' '04-listen_to_mouse_events' %}">04 - Listen To Mouse Events</a> </li>
+        <li><a href="{% url 'graph' '05-edges_with_arrows' %}">05 - Edges With Arrows</a></li>
+        <li><a href="{% url 'graph' '06-composite_node'%}">06 - Composite Node</a></li>
+        <li><a href="{% url 'graph' '07-dual_connected_links' %}">07 - Dual Connected Links</a></li>
+        <li><a href="{% url 'graph' '08-network' %}">08 - Network</a></li>
+
+        <li><a href="{% url 'graph' 'empty' %}">Empty</a></li>
+        <li><a href="{% url 'graph' 'constant_layout' %}">Constant Layout</a></li>
+        <li><a href="{% url 'graph' 'convex_hull' %}">Convex Hull</a></li>
+        <li><a href="{% url 'graph' 'physics' %}">Physics</a></li>
+        <li><a href="{% url 'graph' 'dynamic' %}">Dynamic</a></li>
+
+        <li><a href="{% url 'graph' 'ddd' %}">D3 Sample</a></li>
+        <li><a href="{% url 'graph' 'labels' %}">Labels</a></li>
+
+        <li><a href="{% url 'graph-view' 0 %}">Loaded Graph 0</a></li>
+        <li><a href="{% url 'graph-view' 1 %}">Loaded Graph 1</a></li>
+        <li><a href="{% url 'graph-view' 2 %}">Loaded Graph 2</a></li>
+        <li><a href="{% url 'graph-view' 3 %}">Loaded Graph 3</a></li>
+
+        <li><a href="{% url 'graph' 'webgl-renderer' %}">WebGL Renderer</a></li>
+        <li><a href="{% url 'graph' 'webgl-input' %}">WebGL Input</a></li>
+        <li><a href="{% url 'graph' 'webgl-dynamic' %}">WebGL Dynamic</a></li>
+
+        <li><a href="{% url 'graph' 'turtle' %}">Turtle</a></li>
+    {% endblock %}
+    </body>
+</html>
