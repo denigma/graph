@@ -249,7 +249,7 @@ $(document).ready(function(){
         $("#ex2").click(function(event){ $("#tinput").val(ex2); });
         $("#ex3").click(function(event){ $("#tinput").val(ex3); });
 
-        // Handling output support (node/link labels rendering, SVG expert
+        // Handling output support (node/link labels rendering, SVG export)
         $("#labels").click(function(event){
             $("#out").html("");
             if(labelsvis){
@@ -288,7 +288,7 @@ $(document).ready(function(){
             visualiseGraph(store);
         });
 
-        $("#svgexpert").click(function(event){
+        $("#svgexport").click(function(event){
             var basesvg = $("out").html();
             var header = '<?xml version="1.0" encoding="UTF-8"?>\n\
 <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">';
